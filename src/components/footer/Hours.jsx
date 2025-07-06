@@ -6,10 +6,7 @@ function Hours() {
       </h4>
       <ul className="space-y-5 font-medium text-gray-300">
         <li>
-          <span className="font-semibold">Monday – Friday: </span>9:00 am - 10 pm
-        </li>
-        <li>
-          <span className="font-semibold">Saturday: </span>10:00 am - 12:00 am
+          <span className="font-semibold">Monday – Saturday: </span>5:00 am - 10 pm
         </li>
         <li>
           <span className="font-semibold">Sunday: </span>Closed
