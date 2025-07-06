@@ -13,7 +13,7 @@ function Info() {
       </p>
       <div className="grid 2xl:grid-cols-2 2xl:gap-y-8">
         <div>
-          <h4 className={headingStyles}>Karachi, Pakistan</h4>
+          <h4 className={headingStyles}>Surat, Gujarat </h4>
           <address className="font-medium not-italic text-gray-300">
             Radhika complex
             <br /> surat
