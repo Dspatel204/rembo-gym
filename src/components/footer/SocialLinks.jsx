@@ -21,7 +21,7 @@ const socialMediaLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/sharjeel_.siddiqui._/", // Replace with your actual Pinterest profile URL
+    url: "https://www.instagram.com/rambo_family_gym_/", // Replace with your actual Pinterest profile URL
     icon: <FaInstagram />,
   },
   {
