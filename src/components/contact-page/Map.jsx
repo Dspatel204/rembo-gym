@@ -1,7 +1,7 @@
 function Map() {
   return (
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57915.73438071784!2d67.12094155951029!3d24.87295351913192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3399d42aef5f1%3A0xa5813c4e620196a7!2sShah%20Faisal%20Colony%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1723490744301!5m2!1sen!2s"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.039607700517!2d72.90134617589774!3d21.24152068152795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05368d7cbebc1%3A0xb527a7d08a602f6c!2s401%2C%20Radhika%20Point%2C%20opp.%20Pmb%20Mall%2C%20Amroli%2C%20Surat%2C%20Gujarat%20394107!5e0!3m2!1sen!2sin!4v1720270877883!5m2!1sen!2sin"
       width="600"
       height="450"
       allowFullScreen=""

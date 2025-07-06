@@ -15,8 +15,7 @@ function Info() {
         <div>
           <h4 className={headingStyles}>Surat, Gujarat </h4>
           <address className="font-medium not-italic text-gray-300">
-            Radhika complex
-            <br /> surat
+             401, Radhika Point, opp. Pmb Mall, Amroli, Surat, Gujarat 394107
           </address>
         </div>
         <div>
