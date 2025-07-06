@@ -9,11 +9,11 @@ function Copyright() {
       <p>
         Designed by{" "}
         <Link
-          to="https://sharjeel-siddiqui.vercel.app"
+          to="https://github.com/Dspatel204"
           target="_blank"
           className="focus text-red"
         >
-          Sharjeel Siddiqui
+          Dspatel
         </Link>
       </p>
     </div>
