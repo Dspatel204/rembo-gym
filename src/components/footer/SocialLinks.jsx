@@ -11,12 +11,12 @@ const linkStyles =
 const socialMediaLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/sharjeel-siddiqui-599870248/", // Replace with your actual Facebook page URL
+    url: "https://www.linkedin.com/in/dishant-patel/", // Replace with your actual Facebook page URL
     icon: <FaLinkedin />,
   },
   {
     name: "Github",
-    url: "https://github.com/sharjeel-siddiqui12", // Replace with your actual Twitter profile URL
+    url: "https://github.com/dspatel204", // Replace with your actual Twitter profile URL
     icon: <FaGithub />,
   },
   {
@@ -26,7 +26,7 @@ const socialMediaLinks = [
   },
   {
     name: "Facebook",
-    url: "https://www.facebook.com/sharjeel.siddiqui15", // Replace with your actual YouTube channel URL
+    url: "https://www.facebook.com/rembo_family_gym_", // Replace with your actual YouTube channel URL
     icon: <FaFacebookF />,
   },
 ];
