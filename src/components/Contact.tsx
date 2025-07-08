@@ -16,7 +16,7 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["info@fitprogym.com", "support@fitprogym.com"]
+      details: ["info@rembogym.com", "support@rembogym.com"]
     },
     {
       icon: <Clock className="h-6 w-6" />,

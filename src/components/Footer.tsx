@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Dumbbell className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-gradient">FitPro Gym</span>
+              <span className="text-2xl font-bold text-gradient"> Gym</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Transform your life with our professional trainers, modern equipment, 
@@ -73,7 +73,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 FitPro Gym. All rights reserved.
+            © 2024 rembo family Gym. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
