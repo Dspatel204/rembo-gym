@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# Rembo Gym
 
-## Project info
+A modern, responsive fitness website built with React and Tailwind CSS. Rembo Gym helps users discover classes, learn about services, and get in touch for a free consultation.
 
-**URL**: https://lovable.dev/projects/1a8b9c6f-67a3-40c4-a1da-c60b35c6a6a8
+## Features
 
-## How can I edit this code?
+- **Hero Section** - Full-screen intro with animated stats (500+ members, 50+ expert trainers, 5+ years of experience)
+- **About** - Overview of professional trainers, modern equipment, personalized programs, and 24/7 gym access
+- **Featured Classes** - Grid of fitness classes including Strength Training, Yoga & Meditation, HIIT Cardio, CrossFit, Boxing, and Pilates
+- **Services** - Professional training, modern equipment, and nutrition guidance
+- **Contact** - Contact form, location, phone, email, and operating hours
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [React Router](https://reactrouter.com/)
+- [Lucide React](https://lucide.dev/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1a8b9c6f-67a3-40c4-a1da-c60b35c6a6a8) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Getting Started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+# Install dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run build
+```
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1a8b9c6f-67a3-40c4-a1da-c60b35c6a6a8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License. See the [LICENSE](./old/LICENSE) file for more details.
