@@ -28,9 +28,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 animate-fade-in">
             <div className="flex items-center space-x-2 mb-4">
-              <Dumbbell className="h-8 w-8 text-primary" />
+              <Dumbbell className="h-8 w-8 text-primary animate-rotate-slow [animation-duration:15s]" />
               <span className="text-2xl font-bold text-gradient"> Gym</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
@@ -42,7 +42,8 @@ const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
-                  className="bg-muted hover:bg-primary text-muted-foreground hover:text-primary-foreground p-2 rounded-lg transition-colors"
+                  className="bg-muted hover:bg-primary text-muted-foreground hover:text-primary-foreground p-2 rounded-lg transition-all duration-300 animate-scale-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {social.icon}
                 </a>
@@ -51,17 +52,22 @@ const Footer = () => {
           </div>
 
           {/* Footer Sections */}
-          {footerSections.map((section) => (
-            <div key={section.title}>
-              <h3 className="font-bold mb-4">{section.title}</h3>
+          {footerSections.map((section, sectionIndex) => (
+            <div
+              key={section.title}
+              className="animate-fade-in"
+              style={{ animationDelay: `${(sectionIndex + 1) * 0.1}s` }}
+            >
+              <h3 className="font-bold mb-4 text-gradient">{section.title}</h3>
               <ul className="space-y-2">
-                {section.links.map((link) => (
-                  <li key={link}>
+                {section.links.map((link, linkIndex) => (
+                  <li key={link} style={{ animationDelay: `${(sectionIndex + 1) * 0.1 + linkIndex * 0.05}s` }} className="animate-slide-in-left">
                     <a
                       href="#"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-all duration-300 relative group"
                     >
                       {link}
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                 ))}
@@ -71,18 +77,18 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center animate-fade-in">
           <p className="text-muted-foreground text-sm">
             © 2024 rembo family Gym. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-all duration-300 hover:translate-y-[-2px]">
               Privacy Policy
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-all duration-300 hover:translate-y-[-2px]">
               Terms of Service
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-all duration-300 hover:translate-y-[-2px]">
               Cookie Policy
             </a>
           </div>

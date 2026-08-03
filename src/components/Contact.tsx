@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Get in <span className="text-gradient">Touch</span>
           </h2>
@@ -45,15 +45,15 @@ const Contact = () => {
               {contactInfo.map((info, index) => (
                 <div
                   key={info.title}
-                  className="card-3d p-6 text-center animate-scale-in"
+                  className="card-3d p-6 text-center animate-scale-in group"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                  <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-primary group-hover:animate-glow-pulse">
                     {info.icon}
                   </div>
                   <h3 className="font-bold mb-2">{info.title}</h3>
-                  {info.details.map((detail, idx) => (
-                    <p key={idx} className="text-sm text-muted-foreground">
+                  {info.details.map((detail) => (
+                    <p key={detail} className="text-sm text-muted-foreground">
                       {detail}
                     </p>
                   ))}
@@ -62,11 +62,11 @@ const Contact = () => {
             </div>
 
             {/* Map Placeholder */}
-            <div className="card-3d p-8 text-center bg-muted/50">
+            <div className="card-3d p-8 text-center bg-muted/50 animate-fade-in">
               <h3 className="text-xl font-bold mb-4">Visit Our Gym</h3>
-              <div className="bg-primary/10 h-48 rounded-lg flex items-center justify-center">
+              <div className="bg-primary/10 h-48 rounded-lg flex items-center justify-center group">
                 <div className="text-center">
-                  <MapPin className="h-12 w-12 text-primary mx-auto mb-2" />
+                  <MapPin className="h-12 w-12 text-primary mx-auto mb-2 animate-float" />
                   <p className="text-muted-foreground">Interactive Map Coming Soon</p>
                 </div>
               </div>
@@ -74,11 +74,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="card-3d p-8">
+          <div className="card-3d p-8 animate-fade-in">
             <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
+                <div className="animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
                   <label className="block text-sm font-medium mb-2">First Name</label>
                   <input
                     type="text"
@@ -86,7 +86,7 @@ const Contact = () => {
                     placeholder="John"
                   />
                 </div>
-                <div>
+                <div className="animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
                   <label className="block text-sm font-medium mb-2">Last Name</label>
                   <input
                     type="text"
@@ -96,7 +96,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="animate-slide-in-left" style={{ animationDelay: "0.3s" }}>
                 <label className="block text-sm font-medium mb-2">Email</label>
                 <input
                   type="email"
@@ -105,7 +105,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div>
+              <div className="animate-slide-in-left" style={{ animationDelay: "0.4s" }}>
                 <label className="block text-sm font-medium mb-2">Phone</label>
                 <input
                   type="tel"
@@ -114,7 +114,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div>
+              <div className="animate-slide-in-left" style={{ animationDelay: "0.5s" }}>
                 <label className="block text-sm font-medium mb-2">Message</label>
                 <textarea
                   rows={4}
@@ -123,8 +123,9 @@ const Contact = () => {
                 />
               </div>
 
-              <Button variant="hero" size="xl" className="w-full">
+              <Button variant="hero" size="xl" className="w-full btn-3d group">
                 Send Message
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
           </div>

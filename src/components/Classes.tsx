@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Clock, Users, Calendar } from "lucide-react";
+import { Clock, Users, Calendar, ArrowRight } from "lucide-react";
 
 const Classes = () => {
   const classes = [
@@ -57,7 +57,7 @@ const Classes = () => {
     <section id="classes" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="text-gradient">Classes</span>
           </h2>
@@ -72,14 +72,15 @@ const Classes = () => {
           {classes.map((classItem, index) => (
             <div
               key={classItem.name}
-              className="card-3d overflow-hidden group animate-scale-in"
+              className="card-3d overflow-hidden group animate-scale-in relative"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Header with Gradient */}
-              <div className={`h-32 bg-gradient-to-br ${classItem.color} relative`}>
+              <div className={`h-32 bg-gradient-to-br ${classItem.color} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/20" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">{classItem.name}</h3>
+                  <h3 className="text-xl font-bold group-hover:translate-x-1 transition-transform">{classItem.name}</h3>
                   <span className="text-sm opacity-90">{classItem.difficulty}</span>
                 </div>
               </div>
@@ -88,7 +89,7 @@ const Classes = () => {
               <div className="p-6">
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center space-x-2 text-sm">
-                    <Clock className="h-4 w-4 text-primary" />
+                    <Clock className="h-4 w-4 text-primary animate-pulse-slow [animation-duration:5s]" />
                     <span>{classItem.time}</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
@@ -96,12 +97,12 @@ const Classes = () => {
                     <span>{classItem.participants} participants</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
-                    <Calendar className="h-4 w-4 text-primary" />
+                    <Calendar className="h-4 w-4 text-primary animate-pulse-slow [animation-duration:6s]" />
                     <span>Instructor: {classItem.instructor}</span>
                   </div>
                 </div>
 
-                <Button variant="outline" className="w-full group-hover:border-primary group-hover:text-primary transition-colors">
+                <Button variant="outline" className="w-full group-hover:border-primary group-hover:text-primary transition-all duration-300 group-hover:translate-y-1">
                   Book Class
                 </Button>
               </div>
@@ -110,16 +111,18 @@ const Classes = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
-          <div className="card-3d p-8 max-w-2xl mx-auto">
+        <div className="text-center animate-scale-in">
+          <div className="card-3d p-8 max-w-2xl mx-auto relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <h3 className="text-2xl font-bold mb-4">
               Ready to Start Your Fitness Journey?
             </h3>
             <p className="text-muted-foreground mb-6">
               Join thousands of members who have transformed their lives through our programs.
             </p>
-            <Button variant="hero" size="xl">
+            <Button variant="hero" size="xl" className="btn-3d group">
               View All Classes
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
         </div>

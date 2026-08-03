@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Users, Award, Target } from "lucide-react";
+import { CheckCircle, Users, Award, Target, ArrowRight } from "lucide-react";
 
 const About = () => {
   const features = [
@@ -48,17 +48,18 @@ const About = () => {
               {achievements.map((achievement, index) => (
                 <div
                   key={achievement}
-                  className="flex items-center space-x-2 animate-scale-in"
+                  className="flex items-center space-x-2 animate-slide-in-left"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 animate-pulse-slow [animation-duration:4s]" />
                   <span className="text-sm font-medium">{achievement}</span>
                 </div>
               ))}
             </div>
 
-            <Button variant="hero" size="xl">
+            <Button variant="hero" size="xl" className="btn-3d group">
               Take a Tour
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
 
